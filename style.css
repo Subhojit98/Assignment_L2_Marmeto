@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
   --svg-tick-url: url("./assets/icons8-tick.svg");
@@ -10,7 +10,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
 }
 
@@ -24,26 +24,26 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
-
 }
 
 /*? Image  Section -> */
 .image_section {
+  margin-top: 50px;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
+
 .currentImageBox {
-  width: 60%;
+  width: 80%;
   height: 75%;
 }
 
@@ -54,10 +54,11 @@ body {
   object-fit: cover;
   object-position: center;
   border-radius: 7px;
+
 }
 
 .other_imagesBox {
-  width: 55%;
+  width: 90%;
   height: 15%;
   display: flex;
   gap: 8px;
@@ -68,6 +69,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   border-radius: 7px;
   cursor: pointer;
 }
@@ -84,11 +86,13 @@ body {
 }
 
 .product_details_container {
-  width: 80%;
+  padding: 15px;
+  width: 100%;
   height: 90%;
   /* border: 1px solid black; */
   margin-top: 2rem;
 }
+
 
 .product_vendor {
   border-bottom: 1px solid var(--horizontal-line-color);
@@ -124,6 +128,7 @@ body {
   color: var(--button-color);
 }
 
+/*? Peoduct color select section styles -> */
 .color_selector_box {
   border-bottom: 1px solid var(--horizontal-line-color);
   padding: 15px;
@@ -143,7 +148,6 @@ body {
   height: 50px;
   cursor: pointer;
   z-index: 2;
-  background-color: #2600ff;
 }
 
 .color-select {
@@ -154,18 +158,15 @@ body {
   margin: 3px;
 }
 
-.color-select:checked {
-  background-color: white;
-  border: 2px solid #2600ff;
-}
 
 .color-select:checked::after {
   content: var(--svg-tick-url);
   position: absolute;
-  width: 31px;
-  height: 31px;
-  transform: translate(8%, 8%);
-  background-color: #2600ff;
+  width: 29px;
+  height: 29px;
+  transform: translate(2%, 2%);
+  background-color: initial;
+  border: 3px solid white;
 }
 
 /*? size select styles -> */
@@ -174,7 +175,7 @@ body {
   border-bottom: 1px solid var(--horizontal-line-color);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   padding: 15px;
   padding-left: 0;
 
@@ -187,7 +188,6 @@ body {
 }
 
 .size-select {
-  margin-right: 0.8rem;
   cursor: pointer;
   width: 18px;
   height: 18px;
@@ -196,14 +196,17 @@ body {
 
 .select-size-box div {
   background-color: #F3F3F3;
-  padding: 0.3rem;
   border-radius: 8px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 0.7rem;
-  ;
+  padding: 10px;
+  gap: 10px;
 }
+
+/*? Add to cart button styles -> */
 
 .btn_box {
   display: flex;
@@ -218,7 +221,8 @@ body {
   justify-content: center;
   background-color: #F3F3F3;
   justify-content: center;
-  width: 25%;
+  width: 90%;
+  padding: 0.8rem;
   border-radius: 20px;
   color: var(--button-color);
   font-size: 0.9rem;
@@ -226,9 +230,9 @@ body {
 
 .addTocart_btn {
   background-color: var(--button-color);
-  color: wheat;
-  width: 40%;
-  padding: 0.7rem;
+  color: white;
+  width: 80%;
+  padding: 0.8rem;
   cursor: pointer;
   border: none;
   border-radius: 20px;
@@ -238,6 +242,12 @@ body {
   gap: 1rem;
 }
 
+.addTocart_btn:hover {
+  background-color: #364fa7;
+
+}
+
+/* apply styles for all buttons -> */
 button {
   cursor: pointer;
   border: none;
@@ -246,8 +256,10 @@ button {
 
 .added_to_crt {
   background-color: var(--added-to-cart-color);
-  width: 75%;
+  width: 100%;
   border-radius: 3px;
+  display: none;
+  transition: 0.3s ease-in-out all;
 }
 
 .added_to_crt p {
@@ -257,6 +269,7 @@ button {
   font-weight: bolder;
   margin: 0;
 }
+
 
 .description {
   padding: 15px;
@@ -277,7 +290,6 @@ button {
 
 /*? For Responsive Layout -> */
 
-/*? target media Mobile -> */
 @media (min-width: 767px) {
   .container {
     flex-direction: row;
@@ -285,4 +297,41 @@ button {
     align-items: center;
   }
 
+
+  .currentImageBox {
+    width: 70%;
+  }
+
+  .image_section {
+    margin-top: 0;
+  }
+
+
+
+  .product_details_container {
+    width: 80%;
+  }
+
+  .chose_size_box {
+    gap: 10px;
+  }
+
+  .select-size-box div {
+    padding: 0.3rem;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .increase_item_box {
+    width: 25%;
+  }
+
+  .addTocart_btn {
+    width: 40%;
+    padding: 0.7rem;
+  }
+
+  .added_to_crt {
+    width: 75%;
+  }
 }
