@@ -1,67 +1,34 @@
-# Coding Assessment L-2 Code Submission Process with Boilerplate
+# Single Page Product Details Page for E-commerce
 
-Welcome to the coding assessment l2. We are excited to see your skills in action. Please follow the instructions below to submit your solution.
+This project is a single page product details page for an e-commerce website. It allows users to view product details, select color and size options, see product images, add items to the cart, and decrease the quantity of items in the cart. The project is built using HTML, CSS, and JavaScript only.
 
-## Getting Started
+## Features
 
-1. **Clone or Download:**
-   - If using Git, clone the repository using the following command:
-     ```
-     git clone https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code.git
-     ```
-   - Alternatively, download the code as a ZIP file and extract it.
+- **Product Details:** Display product information such as name, description, price, etc.
+- **Color and Size Selection:** Users can choose the desired color and size of the product.
+- **Image Gallery:** Show multiple images of the product to users for better visualization.
+- **Add to Cart:** Users can add items to their shopping cart with a click of a button.
+- **Quantity Adjustment:** Ability to increase or decrease the quantity of items in the cart.
 
-2. **Navigate to Project Directory:**
+## Technologies Used
 
-3. **Explore the Structure:**
-Take a moment to review the project structure:
+- HTML: Used for structuring the web page and displaying content.
+- CSS: Used for styling the page and making it visually appealing.
+- JavaScript: Used for implementing interactivity such as adding items to cart and adjusting quantities.
 
-        project-root/
-        |-- index.html
-        |-- style.css
-        |-- script.js
-        |-- README.md
-- `index.html`: Main HTML file for your project.
-- `style.css`: CSS file for styling.
-- `script.js`: JavaScript file for scripting logic.
-- `README.md`: Documentation for your project.
-  
-> **Important:** Avoid using additional files or a single file for your code. Feel free to organize asset files by creating a separate folder.
+## How to Run
 
-## Development and Testing
+1. Clone this repository to your local machine.
+2. Open the `index.html` file in your web browser.
 
-4. **Start Working:**
-- Read all requirements that are shared with design files.
-- Open `index.html` in your browser to view the initial state of the project, And start coding.
-- Modify the `style.css` and `script.js` files to implement your solution.
-5. **Testing:**
-- Test your code to ensure it produces the expected output.
-- Ensure that the console (Developer Tools) does not display any errors.
+## Folder Structure
 
+- `index.html`: Main HTML file containing the structure of the webpage.
+- `styles.css`: CSS file for styling the webpage.
+- `script.js`: JavaScript file for adding interactivity to the webpage.
+- `images/`: Folder containing images of the products.
 
----
-## Submission Guidelines
+## Contributing
 
-### Option 1: GitHub Repository
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
 
-1. Create a new public repository on GitHub.
-2. Upload your project files (index.html, style.css, script.js) to the repository.
-3. Write a brief description of your project in the README.md file.
-4. Share the repository URL with us.
-
-### Option 2: ZIP File on Google Drive
-
-1. Create a ZIP file of your entire project.
-2. Upload the ZIP file to your Google Drive.
-3. Share the public link to the ZIP file via email.
-
-## Hosting (Bonus)
-You can earn bonus points by hosting your project on a free hosting platform such as GitHub Pages or Netlify.
-
-## Important Notes
-
-- Do not use any third-party libraries or frameworks.
-- Ensure that your project works as intended and is free from errors.
-- Make sure to include clear instructions on how to run your project (if necessary).
-
-Feel free to reach out to invigilator at `rishabh@marmeto.com` if you have any questions. Good luck! We look forward to reviewing your submission.
